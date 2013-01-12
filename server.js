@@ -8,6 +8,7 @@ var
 
 var app = express();
 
+// Data ready states.
 var ogdReady = false;
 var wlReady = false;
 var allReady = false;
@@ -34,7 +35,8 @@ function update() {
 
       // Get aufzugData from ogd vienna.
       var url = 'http://data.wien.gv.at/daten/wfs?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:AUFZUGOGD&srsName=EPSG:4326&outputFormat=json';
-      request(url, function (error, response, data) {
+
+      request({uri: url, encoding: 'binary'}, function (error, response, data) {
         if (!error && response.statusCode == 200) {
           var aufzugData = JSON.parse(data);
 
@@ -72,7 +74,8 @@ function update() {
 
 function updateEnd() {
   if (!allReady && ogdReady && wlReady) {
-    // Merge data.
+    // Merge ogd + wl data.
+    allData = { type: "FeatureCollection", features: [] };
     for (var i in ogdData) {
       var item = ogdData[i];
 
@@ -82,7 +85,7 @@ function updateEnd() {
           item.status = wlData[id];
         }
       }
-      allData[i] = item;
+      allData.features.push(item);
     }
     console.log('all ready');
   }
