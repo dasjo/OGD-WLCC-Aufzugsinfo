@@ -92,7 +92,7 @@ function updateEnd() {
 update();
 
 app.get('/', function(req, res, next) {
-  res.writeHead(200, { 'Content-Type': 'application/json' });
+  res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
   res.end(JSON.stringify(allData));
 });
 
