@@ -4,13 +4,11 @@ var
 ogd_static = {
 
   data: {},
-  ready: false,
 
-  update: function(url) {
+  update: function(callback) {
+    console.log('updating ogd static');
     // Get aufzugData from ogd vienna.
-    if (url == undefined) {
-      url = 'http://data.wien.gv.at/daten/wfs?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:AUFZUGOGD&srsName=EPSG:4326&outputFormat=json';
-    }
+    var url = 'http://data.wien.gv.at/daten/wfs?service=WFS&request=GetFeature&version=1.1.0&typeName=ogdwien:AUFZUGOGD&srsName=EPSG:4326&outputFormat=json';
     request({uri: url, encoding: 'binary'}, function (error, response, data) {
       if (!error && response.statusCode == 200) {
         var aufzugData = JSON.parse(data);
@@ -19,8 +17,8 @@ ogd_static = {
           var aufzug = aufzugData.features[i];
           ogd_static.data[aufzug.properties.ANLAGEN_ID] = aufzug;
         }
-        mapping.ready = true;
-        console.log('ogd ready');
+        console.log('ogd static ready');
+        callback(null, ogd_static.data);
       }
     });
   }

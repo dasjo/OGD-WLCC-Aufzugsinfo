@@ -2,9 +2,8 @@ merged_data = {
 
   data: null,
 
-  ready: false,
-
-  update: function(mapping, ogd_static, wl_live) {
+  update: function(mapping, ogd_static, wl_live, callback) {
+    console.log('updating merged data');
     // Merge ogd + wl data.
     var tmp_data = { type: "FeatureCollection", features: [] };
     var ogd_data = ogd_static.data;
@@ -15,7 +14,7 @@ merged_data = {
 
       var id = mapping.ogdIdtoWLId(i);
       if (id != undefined) {
-        var status = wl_data.getStatus(id);
+        var status = wl_live.getStatus(id);
         if (status != undefined) {
           item.status = status;
         }
@@ -23,7 +22,8 @@ merged_data = {
       tmp_data.features.push(item);
     }
     console.log('merged data ready');
-    data = tmp_data;
+    merged_data.data = tmp_data;
+    callback(null, merged_data.data);
   }
 
 }

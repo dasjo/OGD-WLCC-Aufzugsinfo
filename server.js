@@ -16,10 +16,27 @@ var
   merged_data = require('./provider/merged_data.js');
 
 function update() {
-  mapping.update();
-  ogd_static.update();
-  wl_live.update();
-  merged_data.update(mapping, ogd_static, wl_live);
+  async.parallel(
+    [
+      mapping.update,
+      ogd_static.update,
+      wl_live.update
+    ],
+    function (err, results) {
+      console.log('parallel finished');
+      if (err) {
+        console.log(err);
+      }
+      else {
+        console.log(results);
+        merged_data.update(mapping, ogd_static, wl_live,
+          function(err, results) {
+            console.log(err);
+            console.log(results);
+          });
+        }
+      }
+  );
 }
 
 // Prepare data.
@@ -27,7 +44,7 @@ update();
 
 app.get('/', function(req, res, next) {
   res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
-  res.end(JSON.stringify(allData));
+  res.end(JSON.stringify(merged_data.data));
 });
 
 app.listen(8080);
