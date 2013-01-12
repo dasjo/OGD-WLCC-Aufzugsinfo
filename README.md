@@ -16,7 +16,7 @@ Ein zentrales GeoJSON Feed soll die derzeit verteilte Information einheitlich be
 
 ## Umsetzung
 
-Als Experiment wurde ein node.js server umgesetzt, der die Quellen dynamisch abfrägt, verarbeitet und als kombiniertes GeoJSON Feed bereit stellt. 
+Als Experiment wurde ein node.js server umgesetzt, der die Quellen dynamisch abfrägt, verarbeitet und als kombiniertes GeoJSON Feed bereit stellt. Das originale GeoJSON Feed von OGD Wien wird gegebenenfalls um ein 'status'-Attribut, welches die Aufzuginfo von den Wiener Linien enthält.   
 
 Beispielausgabe: 
 
