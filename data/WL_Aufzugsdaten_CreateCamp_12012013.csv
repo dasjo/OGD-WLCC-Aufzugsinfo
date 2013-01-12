@@ -1,0 +1,259 @@
+BMID;Anlagen_ID;STATION;KUERZEL;LINIE
+1;KP A04;Karlsplatz;KP;U1
+2;AD A01;Alte Donau ;AD;U1
+3;AD A02;Alte Donau ;AD;U1
+4;AS A01;Alser Straße;AS;U6
+5;AS A02;Alser Straße;AS;U6
+15;BU A01;Burggasse;BU;U6
+16;BU A02;Burggasse;BU;U6
+17;ED A01;Erdberg;ED;U3
+18;ED A02;Erdberg;ED;U3
+19;ED A03;Erdberg;ED;U3
+22;GU A01;Gumpendorfer Straße;GU;U6
+23;GU A02;Gumpendorfer Straße;GU;U6
+29;HZ A01;Herrengasse;HZ;U3
+30;HZ A02;Herrengasse;HZ;U3
+31;HZ A03;Herrengasse;HZ;U3
+36;JS A01;Josefstädter Straße;JS;U6
+37;JS A02;Josefstädter Straße;JS;U6
+41;KM A01;Kaisermühlen;KM;U1
+42;KM A02;Kaisermühlen;KM;U1
+45;KN A01;Kardinal Nagl Platz;KN;U3
+48;KP A03;Karlsplatz;KP;U1
+80;VT A01;Volkstheater;VT;U3
+81;VT A02;Volkstheater;VT;U3
+82;VT A03;Volkstheater;VT;U3
+83;VT A04;Volkstheater;VT;U3
+84;VT A05;Volkstheater;VT;U3
+85;VT A06;Volkstheater;VT;U3
+97;SZ A04;Stephansplatz;SZ;U1
+112;SP A01;Schwedenplatz;SP;U1
+113;SP A02;Schwedenplatz;SP;U1
+114;SP A03;Schwedenplatz;SP;U1
+137;SZ A01;Stephansplatz;SZ;U1
+138;SZ A02;Stephansplatz;SZ;U1
+139;SZ A03;Stephansplatz;SZ;U1
+146;RG A01;Rochusgasse;RG;U3
+147;RG A02;Rochusgasse;RG;U3
+158;SE A01;Stubentor;SE;U3
+159;SE A02;Stubentor;SE;U3
+160;SE A03;Stubentor;SE;U3
+166;SG A01;Schlachthausgasse;SG;U3
+167;SG A02;Schlachthausgasse;SG;U3
+169;SL A01;Südtiroler Platz;SL;U1
+170;SL A02;Südtiroler Platz;SL;U1
+193;MB A01;Michelbeuern;MB;U6
+194;MB A02;Michelbeuern;MB;U6
+196;MH A01;Meidling Hauptstraße;MH;U4
+199;NH A01;Niederhofstraße;NH;U6
+200;NH A02;Niederhofstraße;NH;U6
+209;NS A01;Nußdorfer Straße;NS;U6
+210;NS A02;Nußdorfer Straße;NS;U6
+211;PH A01;Philadelphiabrücke;PH;U6
+212;PH A02;Philadelphiabrücke;PH;U6
+239;LE A01;Längenfeldgasse;LE;U6
+240;LE A02;Längenfeldgasse;LE;U6
+262;LA A01;Landstraße;LA;U3
+263;LA A02;Landstraße;LA;U3
+264;LA A03;Landstraße;LA;U3
+265;LA A04;Landstraße;LA;U3
+266;LA A05;Landstraße;LA;U3
+281;WA A01;Währinger Straße;WA;U6
+282;WA A02;Währinger Straße;WA;U6
+283;ZK A01;Kagran;ZK;U1
+352;MA A01;Neubaugasse;MA;U3
+353;MA A02;Neubaugasse;MA;U3
+354;MA A03;Neubaugasse;MA;U3
+355;MA A04;Neubaugasse;MA;U3
+368;GZ A01;Zieglergasse;GZ;U3
+369;GZ A02;Zieglergasse;GZ;U3
+370;GZ A03;Zieglergasse;GZ;U3
+371;GZ A04;Zieglergasse;GZ;U3
+384;WS A01;Westbahnhof;WS;U3
+385;WS A02;Westbahnhof;WS;U3
+386;WS A03;Westbahnhof;WS;U3
+387;WS A04;Westbahnhof;WS;U3
+388;WS A05;Westbahnhof;WS;U3
+389;WS A06;Westbahnhof;WS;U3
+390;WS A07;Westbahnhof;WS;U3
+393;WS A10;Westbahnhof;WS;U3
+394;WS A11;Westbahnhof;WS;U3
+395;WS A12;Westbahnhof;WS;U3
+432;SH A01;Schweglerstraße;SH;U3
+433;SH A02;Schweglerstraße;SH;U3
+442;JO A01;Johnstraße;JO;U3
+443;JO A02;Johnstraße;JO;U3
+444;JO A03;Johnstraße;JO;U3
+445;JO A04;Johnstraße;JO;U3
+475;TE A01;Tscherttegasse;TE;U6
+476;PW A01;Am Schöpfwerk;PW;U6
+477;PW A02;Am Schöpfwerk;PW;U6
+478;PF A01;Perfektastraße;PF;U6
+479;PF A02;Perfektastraße;PF;U6
+480;HT A02;Siebenhirten;HT;U6
+481;HT A01;Siebenhirten;HT;U6
+482;ES A01;Erlaaer Straße;ES;U6
+483;ES A02;Erlaaer Straße;ES;U6
+484;AE A02;Alterlaa;AE;U6
+485;AE A01;Alterlaa;AE;U6
+486;AU A01;Spittelau;AU;U6
+487;AU A02;Spittelau;AU;U6
+488;AU A03;Spittelau;AU;U6
+489;AU A04;Spittelau;AU;U6
+490;AU A05;Spittelau;AU;U6
+491;AU A06;Spittelau;AU;U6
+508;JG A01;Jägerstraße;JG;U6
+509;JG A02;Jägerstraße;JG;U6
+510;DS A01;Dresdner Straße;DS;U6
+511;DS A02;Dresdner Straße;DS;U6
+514;HK A01;Handelskai;HK;U6
+515;HK A02;Handelskai;HK;U6
+516;HK A03;Handelskai;HK;U6
+517;HK A04;Handelskai;HK;U6
+518;HK A05;Handelskai;HK;U6
+519;HK A06;Handelskai;HK;U6
+520;HK A07;Handelskai;HK;U6
+521;HK A08;Handelskai;HK;U6
+528;ND A01;Neue Donau;ND;U6
+529;ND A02;Neue Donau;ND;U6
+530;FL A01;Floridsdorf;FL;U6
+531;FL A02;Floridsdorf;FL;U6
+566;PG A01;Pilgramgasse;PG;U4
+567;PG A02;Pilgramgasse;PG;U4
+572;MG A01;Margaretengürtel;MG;U4
+573;MG A02;Margaretengürtel;MG;U4
+574;SB A01;Schönbrunn;SB;U4
+575;SB A02;Schönbrunn;SB;U4
+576;HF A01;Hütteldorf;HF;U4
+580;KP A02;Karlsplatz;KP;U2
+581;KP A05;Karlsplatz;KP;U4
+582;KP A06;Karlsplatz;KP;U2
+583;FB A01;Friedensbrücke;FB;U4
+593;HI A01;Hietzing;HI;U4
+594;HI A02;Hietzing;HI;U4
+595;HH A01;Hütteldorfer Straße;HH;U3
+596;HH A02;Hütteldorfer Straße;HH;U3
+597;HH A03;Hütteldorfer Straße;HH;U3
+598;HH A04;Hütteldorfer Straße;HH;U3
+599;KR A01;Kendlerstraße;KR;U3
+600;KR A02;Kendlerstraße;KR;U3
+601;KR A03;Kendlerstraße;KR;U3
+603;OK A01;Ottakring;OK;U3
+604;OK A02;Ottakring;OK;U3
+605;OK A03;Ottakring;OK;U3
+606;OK A04;Ottakring;OK;U3
+626;RH A01;Rathaus;RH;U2
+627;RH A02;Rathaus;RH;U2
+628;KG A01;Kettenbrückengasse;KG;U4
+629;KG A02;Kettenbrückengasse;KG;U4
+711;KE A01;Kepplerplatz;KE;U1
+721;HS A01;Heiligenstadt;HS;U4
+722;HS A02;Heiligenstadt;HS;U4
+725;SO A01;Schottentor;SO;U2
+727;RL A01;Rossauer Lände;RL;U4
+728;RL A02;Rossauer Lände;RL;U4
+729;ST A01;Stadtpark;ST;U4
+730;ST A02;Stadtpark;ST;U4
+734;AW A01;Gasometer;AW;U3
+735;NP A01;Nestroyplatz;NP;U1
+736;AW A02;Gasometer;AW;U3
+739;PP A01;Zippererstraße;PP;U3
+740;PP A02;Zippererstraße;PP;U3
+744;SA A01;Simmerring;SA;U3
+745;SA A02;Simmerring;SA;U3
+746;SA A03;Simmerring;SA;U3
+756;EK A01;Enkplatz;EK;U3
+757;EK A02;Enkplatz;EK;U3
+758;EK A03;Enkplatz;EK;U3
+766;SA A04;Simmerring;SA;U3
+769;VS A01;Vorgartenstraße;VS;U1
+770;VS A02;Vorgartenstraße;VS;U1
+771;BA A01;Museumsquartier;BA;U2
+772;BA A02;Museumsquartier;BA;U2
+1016493;SL A03;Südtiroler Platz;SL;U1
+1016542;UV A01;Unter St. Veit  ;UV;U4
+1016543;UV A02;Unter St. Veit  ;UV;U4
+1016544;OV A01;Ober St. Veit;OV;U4
+1016545;OV A02;Ober St. Veit;OV;U4
+1016567;MP A03;Matzleinsdorfer Platz;;
+1016568;MP A06;Matzleinsdorfer Platz;;
+1016592;VT A07;Volkstheater;VT;U2
+1016593;VT A08;Volkstheater;VT;U2
+1016611;RP A01;Reumannplatz;RP;U1
+1016902;BR A01;Braunschweiggasse;BR;U4
+1016903;BR A02;Braunschweiggasse;BR;U4
+1016923;LG A01;Laurenzgasse;;
+1016924;LG A02;Laurenzgasse;;
+1016925;EI A01;Eichenstraße;;
+1016926;EI A02;Eichenstraße;;
+1016948;PR A01;Praterstern;PR;U1
+1016949;PR A02;Praterstern;PR;U1
+1016957;TA A01;Taubstummengasse;TA;U1
+1017108;KT A01;Kagraner Platz;KT;U1
+1017109;KT A02;Kagraner Platz;KT;U1
+1017110;KT A03;Kagraner Platz;KT;U1
+1017111;KT A04;Kagraner Platz;KT;U1
+1017115;RB A01;Rennbahnweg;RB;U1
+1017116;RB A02;Rennbahnweg;RB;U1
+1017117;AK A01;Aderklaaer Str.;AK;U1
+1017118;AK A02;Aderklaaer Str.;AK;U1
+1017119;GF A01;Großfeldsiedlung;GF;U1
+1017120;GF A02;Großfeldsiedlung;GF;U1
+1017121;LU A01;Leopoldau;LU;U1
+1017122;LU A02;Leopoldau;LU;U1
+1017123;LU A03;Leopoldau;LU;U1
+1017124;LU A04;Leopoldau;LU;U1
+1017125;KP A07;Karlsplatz;KP;U1
+1017126;MP A01;Matzleinsdorfer Platz;;
+1017625;KL A01;Kliebergasse;;
+1017626;KL A02;Kliebergasse;;
+1017627;KL A03;Kliebergasse;;
+1017717;KP A08;Karlsplatz;KP;U4
+1018058;TB A01;Taborstraße;TB;U2
+1018059;TB A02;Taborstraße;TB;U2
+1018060;TB A03;Taborstraße;TB;U2
+1018061;MS A01;Messe Prater;MS;U2
+1018062;MS A02;Messe Prater;MS;U2
+1018063;KI A01;Krieau;KI;U2
+1018064;KI A02;Krieau;KI;U2
+1018065;SW A01;Stadion;SW;U2
+1018066;SW A02;Stadion;SW;U2
+1018067;SW A03;Stadion;SW;U2
+1018068;SW A04;Stadion;SW;U2
+1018087;PR A03;Praterstern;PR;U1
+1018091;PR A05;Praterstern;PR;U1
+1018092;PR A06;Praterstern;PR;U1
+1018093;SR A01;Schottenring;SR;U2
+1018094;SR A02;Schottenring;SR;U2
+1018095;SR A03;Schottenring;SR;U2
+1018096;SR A04;Schottenring;SR;U2
+1018363;PR A04;Praterstern;PR;U1
+1018631;PR A07;Praterstern;PR;U1
+1018634;MP A04;Matzleinsdorfer Platz;;
+1031263;DM A01;Donaumarina;DM;U2
+1031264;DM A02;Donaumarina;DM;U2
+1031265;DM A03;Donaumarina;DM;U2
+1031266;DM A04;Donaumarina;DM;U2
+1031267;DM A05;Donaumarina;DM;U2
+1031268;DM A06;Donaumarina;DM;U2
+1031269;DT A01;Donaustadtbrücke;DT;U2
+1031270;DT A02;Donaustadtbrücke;DT;U2
+1031271;DT A03;Donaustadtbrücke;DT;U2
+1031272;DT A04;Donaustadtbrücke;DT;U2
+1031273;DT A05;Donaustadtbrücke;DT;U2
+1031274;SD A01;Stadlau;SD;U2
+1031275;SD A02;Stadlau;SD;U2
+1031276;SD A03;Stadlau;SD;U2
+1031277;SD A04;Stadlau;SD;U2
+1031282;AR A01;Hardeggasse;AR;U2
+1031283;AR A02;Hardeggasse;AR;U2
+1031284;DP A01;Donauspital;DP;U2
+1031285;DP A02;Donauspital;DP;U2
+1031289;AP A01;Aspernstraße;AP;U2
+1031290;AP A02;Aspernstraße;AP;U2
+1031299;SL A05;Südtiroler Platz;;
+1031301;BL A01;Blechturmgasse;;18
+1031302;BL A02;Blechturmgasse;;18
+1031895;SL A04;Südtiroler Platz;;18
+1031897;SL A06;Südtiroler Platz;;
+1031898;SL A08;Südtiroler Platz;;18
