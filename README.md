@@ -2,6 +2,10 @@
 
 Node.js basiertes Mashup der OGD Wien Aufzugsdaten mit Aufzugausfällen der Wiener Linien zum CreateCamp Wiener Linien/open3.at 2013.
 
+
+* Die OGD Wien Aufzugsdaten stellen die Basis der statischen Stammdaten im GeoJSON format dar.
+* Die Aufzugausfälle von den Wiener Linien
+
 Install node.js, run 'node server.js' and fix all missing dependencies using 'npm'.
 
 Example output:
