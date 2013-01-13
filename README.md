@@ -2,6 +2,10 @@
 
 Node.js basiertes Mashup der OGD Wien Aufzugsdaten mit Aufzugausfällen der Wiener Linien zum CreateCamp Wiener Linien/open3.at 2013.
 
+Beispielausgabe: 
+
+https://raw.github.com/dasjo/OGD-WLCC-Aufzugsinfo/master/example.json
+
 ## Developer Info
 
 Install node.js, run 'node server.js' and fix all missing dependencies using 'npm'.
@@ -42,7 +46,3 @@ Ein zentrales GeoJSON Feed soll die derzeit verteilte Information einheitlich be
 ## Umsetzung
 
 Als Experiment wurde ein node.js server umgesetzt, der die Quellen dynamisch abfrägt, verarbeitet und als kombiniertes GeoJSON Feed bereit stellt. Das originale GeoJSON Feed von OGD Wien wird gegebenenfalls um ein 'status'-Attribut erweitert, welches die Aufzuginfo von den Wiener Linien enthält.   
-
-Beispielausgabe: 
-
-https://raw.github.com/dasjo/OGD-WLCC-Aufzugsinfo/master/example.json
