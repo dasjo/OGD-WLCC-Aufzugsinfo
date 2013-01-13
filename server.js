@@ -52,12 +52,25 @@ async.series(
   [
     timeStatic,
     timeLive,
-  ]
+  ],
+  function(err) {
+    if (!err) {
+      // Data is available, change response function.
+      responseFunction = function(req, res, next) {
+        res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
+        res.end(JSON.stringify(merged_data.data));
+      };
+    }
+  }
 );
 
-app.get('/', function(req, res, next) {
-  res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
-  res.end(JSON.stringify(merged_data.data));
-});
+// Default response: data not ready, override when ready.
+var responseFunction = function(req, res, next) {
+  res.writeHead(503, { });
+  res.end("data not ready");
+};
 
+app.get('/', function(req, res, next) {
+  responseFunction(req, res, next);
+});
 app.listen(8080);
