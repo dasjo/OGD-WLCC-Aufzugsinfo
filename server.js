@@ -47,7 +47,7 @@ function timeLive(callback) {
   )
 }
 
-// Start timers in series (make sure, static data before live data).
+// Start timers in series (make sure, static data is available before processing live data).
 async.series(
   [
     timeStatic,

@@ -37,6 +37,7 @@ Features
 TODO
 
 * only process data when changed.
+* error handling.
 
 ## References
 
