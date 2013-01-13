@@ -28,10 +28,10 @@ Install node.js, run 'node server.js' and fix all missing dependencies using 'np
 
 Features
 
-* server.js uses async to update data providers in parallel/series.
+* server.js provides a '/' route on port '8080' that returns merged data as GeoJSON feed.
+* server.js uses async to update data providers in parallel/series:
 * timeStatic updates static data (ogd wien & mapping) providers  in parallel every 10min.
 * timeLive updates live data (wiener linen) and calculates merged data in series every 2sec.
-* server.js provides a '/' route on port '8080' that returns merged data as GeoJSON feed.
 * the provider folder contains node modules that encapsulate update function for the data sources (mapping.js, ogd_static.js, wl_live.js and merged_data.js).
 
 ## References
