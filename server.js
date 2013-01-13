@@ -5,20 +5,19 @@ var
   csv       = require('csv'),
   fs        = require('fs'),
   async     = require('async'),
-  util      = require('util');
+  util      = require('util'),
 
-var app = express();
-
-var
+  // Data providers.
   mapping = require('./provider/mapping.js'),
   ogd_static = require('./provider/ogd_static.js'),
   wl_live = require('./provider/wl_live.js'),
   merged_data = require('./provider/merged_data.js');
 
+var app = express();
+
 // Update static providers in parallel, once in a while.
 function timeStatic(callback) {
-  async.parallel(
-    [
+  async.parallel([
       mapping.update,
       ogd_static.update
     ],
@@ -33,8 +32,7 @@ function timeStatic(callback) {
 
 // Update live data, then merged data in series, often.
 function timeLive(callback) {
-  async.series(
-    [
+  async.series([
       wl_live.update,
       function(callback) {
         merged_data.update(mapping, ogd_static, wl_live, callback);
@@ -48,8 +46,7 @@ function timeLive(callback) {
 }
 
 // Start timers in series (make sure, static data is available before processing live data).
-async.series(
-  [
+async.series([
     timeStatic,
     timeLive,
   ],

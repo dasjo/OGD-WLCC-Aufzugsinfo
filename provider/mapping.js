@@ -7,9 +7,11 @@ mapping = {
   // fromWL: {},
   fromOGD: {},
 
+  /**
+   * Get mappings from csv data.
+   */
   update: function(callback) {
     console.log('updating mapping');
-    // Get mappings from csv data.
     var file = __dirname + '/data/WL_Aufzugsdaten_CreateCamp_12012013.csv';
     csv() .from.stream(fs.createReadStream(file), { delimiter: ';', columns: true})
       .on('record', function(data,index) {

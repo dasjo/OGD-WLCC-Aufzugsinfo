@@ -5,9 +5,11 @@ wl_live = {
 
   data: {},
 
+  /**
+   * Get aufzugData from ogd vienna.
+   */
   update: function(callback) {
     console.log('updating wl live');
-    // Get aufzugData from ogd vienna.
     var url = 'http://ogd-createcamp-wienerlinien.at/webservice.ft/getTrafficInfoList?sender=createcamp19&relatedLines=all';
     request(url, function (error, response, data) {
       if (!error && response.statusCode == 200) {
@@ -20,7 +22,7 @@ wl_live = {
             wl_live.data[info.name] = info;
           }
         }
-        console.log('wl ready');
+        console.log('wl updated');
         callback(null, wl_live.data);
       }
     });
