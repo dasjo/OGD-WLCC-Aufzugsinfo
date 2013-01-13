@@ -15,32 +15,45 @@ var
   wl_live = require('./provider/wl_live.js'),
   merged_data = require('./provider/merged_data.js');
 
-function update() {
+// Update static providers in parallel, once in a while.
+function timeStatic(callback) {
   async.parallel(
     [
       mapping.update,
-      ogd_static.update,
-      wl_live.update
+      ogd_static.update
     ],
-    function (err, results) {
-      console.log('parallel finished');
-      if (err) {
-        console.log(err);
+    function(err) {
+      if (!err) {
+        if (callback) { callback(); }
+        setTimeout(timeStatic, 10 * 60 * 1000); // Every 10min.
       }
-      else {
-        console.log(results);
-        merged_data.update(mapping, ogd_static, wl_live,
-          function(err, results) {
-            console.log(err);
-            console.log(results);
-          });
-        }
-      }
-  );
+    }
+  )
 }
 
-// Prepare data.
-update();
+// Update live data, then merged data in series, often.
+function timeLive(callback) {
+  async.series(
+    [
+      wl_live.update,
+      function(callback) {
+        merged_data.update(mapping, ogd_static, wl_live, callback);
+      }
+    ],
+    function(err) {
+      if (callback) { callback(); }
+      setTimeout(timeLive, 2 * 1000); // Every 2sec.
+    }
+  )
+}
+
+// Start timers in series (make sure, static data before live data).
+async.series(
+  [
+    timeStatic,
+    timeLive,
+  ]
+);
 
 app.get('/', function(req, res, next) {
   res.writeHead(200, { 'Content-Type': 'application/json; charset=utf-8' });
